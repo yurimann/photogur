@@ -1,8 +1,11 @@
 <h1>Pictures (<%= @pictures.length %>)</h1>
-<%= link_to "New Picture", "/pictures/new" %>
+<button><%= link_to "New Picture", "/pictures/new" %></button>
 
-
-<% @pictures.each do |picture| %>
-  <p><%= picture.title %>, <%=picture.artist %></p>
-  <img src="<%=picture.url %>">
+<div class="assets">
+    <% @pictures.each do |picture| %>
+    <div class="frame">
+    <img class="display" src="<%=picture.url %>">
+    <p><%= picture.title %>, <%=picture.artist %></p>
+  </div>
 <%end%>
+</div>

@@ -1,0 +1,26 @@
+* {
+  margin: auto;
+  padding: 20px;
+  font-family: helvetica, arial, sans-serif;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button {
+  text-align: center;
+}
+
+.assets {
+  text-align: center;
+}
+
+.frame {
+  background-color: skyblue;
+}
+
+.display {
+  border: 5px solid black;
+  padding: 0;
+  border-radius: 10px;
+  max-width: 100%
+}
