@@ -8,4 +8,11 @@
     <p><%= picture.title %>, <%=picture.artist %></p>
   </div>
 <%end%>
+<h1>Most recent pictures</h1>
+<ul>
+  <% @most_recent_pictures.each do |picture| %>
+    <%= picture.title %><br>
+    <img class="display" src="<%=picture.url %>"><br>
+  <% end %>
+</ul>
 </div>
